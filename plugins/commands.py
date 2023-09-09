@@ -319,7 +319,7 @@ async def start(client, message):
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue ! So That you Can Get Access To Unlimited Movies Until 12 Hours From Now !  </b>",
-                    protect_content=False,
+                    protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
@@ -327,7 +327,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 caption=f_caption,
-                protect_content=False if pre == 'filep' else False,
+                protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
@@ -384,14 +384,14 @@ async def start(client, message):
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue ! So That you Can Get Access To Unlimited Movies Until 12 Hours From Now ! </b>",
-                    protect_content=False,
+                    protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
                 return
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
-                protect_content=False if pre == 'filep' else False,
+                protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
@@ -445,7 +445,7 @@ async def start(client, message):
                 ]]
         await message.reply_text(
             text="<b>You are not verified !\nKindly verify to continue ! So That you Can Get Access To Unlimited Movies Until 12 Hours From Now ! </b>",
-            protect_content=False,
+            protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
         return
@@ -453,7 +453,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=False if pre == 'filep' else False,
+        protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
             [
              [
