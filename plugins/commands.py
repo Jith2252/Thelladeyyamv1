@@ -54,7 +54,7 @@ async def start(client, message):
                     InlineKeyboardButton('✇ How To Use This Bot ✇', url="https://t.me/How_To_Solve_Nma")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEBqMpk0-5bhFSs5D3cMyqfUJDSu_ekQAACMAwAApwpoFZ1r-Lrpn9OpB4E") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEC5M5lrqbKQ9KH7cg4GQHkcc4uzB7X2QACjQwAAnQRcVXGJIY2jhZqBh4E") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
